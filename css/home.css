@@ -102,6 +102,11 @@ body {
     border-bottom: 10px;*/
 }
 
+li {
+    list-style-image: url("https://img.icons8.com/ios/50/000000/wings.png");
+    width: 5px;
+}
+
 .lux {
     color: #BFA6A2;
 }
