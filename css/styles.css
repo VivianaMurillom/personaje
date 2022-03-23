@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(192,33,41);
+    grid-template: 
+    "header1" 250px
+    "navbar1" 50px
+    "section-1" auto
+    "section-2" auto
+    "section-3" auto
+    "footer1" 250px;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(192,33,41);
+    text-shadow: 1px 1px 2px black;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(192,33,41);
+}
+
+/*Diseño de Index.html*/
+
+header{
+    background: repeating-linear-gradient(0deg, rgba(249,90,82,1) 0%, rgba(132,109,106,1) 100%);
+    grid-area: header1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.titulo1 {
+    color: rgb(192,33,41);
+    font-size: 16px;
+}
+
+.titulo2{
+    color: rgb(192,33,41);
+    font-family: 'Redressed', cursive;
+    font-size: 60px;
+    text-shadow: 1px 2px 1px black;
+}
+
+nav {
+    display: grid;
+    background-color: white;
+    grid-area: navbar1;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    padding: 1rem;
+}
+
+.section1 {
+    background-color: rgba(250,250,250,.4);
+    border: 1px solid #444141; 
+    border-radius: 10px;
+    grid-area: section-1;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.caja1 img {
+    max-width: 400px;
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 3px 3px 7px #999999;
+    border-radius: 10px;
+}
+
+nav a {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #999999;;
+}
+
+.section2 {
+    background-color: rgba(250,250,250,.4);
+    border: 1px solid #444141; 
+    border-radius: 10px;
+    margin: 20px;
+    grid-area: section-2;
+    padding: 1rem;
+}
+
+.section3 {
+    background-color: rgba(250,250,250,.4);
+    border: 1px solid #444141; 
+    border-radius: 10px;
+    margin: 20px;
+    grid-area: section-3;
+    padding: 1rem;
+}
+
+ul {
+    display: grid;
+    list-style-type: none;
+}
+
+ul li {
+    background-image: url("https://img.icons8.com/ios/50/000000/wings.png");
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    padding-bottom: .1rem;
+    padding-left: 2rem;
+}
+
+footer{
+    grid-area: footer1;
+}
+
+.caja_pricipal {
+    color: rgb(249,90,82);
+    display: grid;
+    background-color: #444141;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado {
+    background-color: #BFA6A2;
+    font-family: 'Redressed', cursive;
+    font-size: 30px;
+    color: #000;
+    padding: 20px 0;
+}
+
+
+.caja_perfil {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin: .5rem 0;
+    max-width: 850px;
+    text-align: center;
+}
+
+.foto, .foto_2, .redes {
+    display: grid;
+    justify-content: center;
+}
+
+.foto img {
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+
+.foto p, .foto_2 p, .redes p {
+    text-align: center;
+}
+
+.foto_2 img{
+    display: grid;
+    max-width: 300px;
+    margin-left: 1.6rem;
+    width: 80%;
+} 
+
+.redes img {
+    max-width: 150px;
+    width: 80%;
+}
+
+/*Resolución de tabletas*/
+@media screen and (min-width: 768px) {
+    /*Diseño de Home*/
+    body {
+        grid-template-areas: 
+            "header1 header1"
+            "navbar1 navbar1"
+            "section-1 section-1"
+            "section-2 section-2"
+            "section-3 section-3"
+            "footer1 footer1";
+        grid-template-columns: 200px auto;
+        grid-template-rows: 200px 50px auto auto auto auto;
+    }
+
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+    /*Diseño de Home*/
+    body {
+        grid-template-areas: 
+            "header1 header1 header1"
+            "navbar1 main1 aside1"
+            "footer1 footer1 footer1"; 
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 100px auto 50px;
+    }
+}
+
+/*Resolución macro*/
+@media screen and (min-width: 1200px) {
+    /*Diseño de Home*/
+    body {
+        background-color: gray;
+    }
+    .container-grid {
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+} */
