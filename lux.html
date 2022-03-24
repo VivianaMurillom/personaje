@@ -22,13 +22,13 @@
     </nav>
 
     <div class="section1">
-        <p>Aburrido de pasar las eternidades incomprendidas por los seres humanos en tierras inenarrables y con una de mis más fiel demonio del inframundo <strong>Mazikeen</strong>, decidí tomar mis vacaciones aquí en la tierra, más específicamente en <strong>Los Angeles</strong>. Pero después de comprar un edificio y volverlo mi humilde morada, conocido ahora como el exclusivo <strong>Lux</strong>, decidí jugar a buscar los malos humanos como ustedes lo hacen (jajaja, qué divertido). Ahí conocí a <strong>La Detective</strong>. 
+        <p class="p1">Aburrido de pasar las eternidades incomprendidas por los seres humanos en tierras inenarrables y con una de mis más fiel demonio del inframundo <strong>Mazikeen</strong>, decidí tomar mis vacaciones aquí en la tierra, más específicamente en <strong>Los Angeles</strong>. Pero después de comprar un edificio y volverlo mi humilde morada, conocido ahora como el exclusivo <strong>Lux</strong>, decidí jugar a buscar los malos humanos como ustedes lo hacen (jajaja, qué divertido). Ahí conocí a <strong>La Detective</strong>. 
         </p>
-        <h2>Pero me imagino, esa historia ya la conoces...</h2>
+        <h2 class="h2-2">Pero me imagino, esa historia ya la conoces...</h2>
         <div class="caja1">
             <img src="img/images.jpg" alt="Imagen de Lucifer programa de televisión">
         </div>
-        <p>Te podría hablar toda la eternidad de mi familia o de mis aventuras con La Detective, pero eso mejor se lo dejo a <a href="https://lucifer.fandom.com/es/wiki/Lucifer_Morningstar" target="_Blank">ellos</a>, he encontrado en la fama mis más devotos seguidores.</p>
+        <p class="p2">Te podría hablar toda la eternidad de mi familia o de mis aventuras con La Detective, pero eso mejor se lo dejo a <a href="https://lucifer.fandom.com/es/wiki/Lucifer_Morningstar" target="_Blank">ellos</a>, he encontrado en la fama mis más devotos seguidores.</p>
         <div class="caja2">
             <img src="img/Lucifer-Tom-Ellis-ha-firmado-para-la-temporada-6-de-la-serie.jpg" alt="Imagen del actor en una de las escenas de la serie">
         </div>
@@ -69,39 +69,85 @@
     <div class="section3">
         <div class="form">
             <p>O si lo prefiere, una selección para usted más personalizada, me has encontrado de muy buen humor esta noche:</p>
-                <form name="Coctelería" action="get" target="_blank" novalidate class="the_form">
-                    <div class="part1">
-                        <label for="Coctelería">¿Es menor de edad?</label>
-                            <input name="birthday" id="birthday" type="date">
-                        <label for="Coctelería">¿Dama, Caballero o Demonio?</label>
-                            <input name="genre" id="genre" type="checkbox"> Mujer
-                            <input name="genre" id="genre" type="checkbox"> Hombre
-                            <input name="genre" id="genre" type="checkbox"> No importa
-                    </div>
-                    <div class="part 2">
-                    <label for="Coctelería">Veo que te has ganado un pretendiente, cuentanos más:</label>
-                        <input name="ecivil" id="ecivil" type="radio">Estoy disponible
-                        <input name="ecivil" id="ecivil" type="radio">Solo disponible medio tiempo
-                        <input name="ecivil" id="ecivil" type="radio">No le cuenten a nadie que estuve aquí
-                    </div>
-                    <label for="Coctelería">Claro está que nos puede dejar su correo, tiene la palabra del diablo que será netamente para comunicaciones comerciales</label>
-                        <input type="email" name="email" id="email" placeholder="correoinfernal@mail.com">
-                    <br><br>
-                    <label for="Coctelería">Su opinión es muy importante para nosotros, ¿quisiera enseñarle algo nuevo al diablo?</label>
-                    <textarea name="observaciones" id="observaciones" cols="30" rows="10" placeholder="Información reservada bajo los eternos lamentos de almas en pena."></textarea>
-                    <br><br>
-                    <label for="Coctelería">Bueno regresando a la bebida:</label>
-                        <select name="bebida" id="bebida">
-                            <option value="0" selected>¿Que personalidad considera usted posee?</option>
-                            <option value="1">1. ¿Se considera una persona divertida, espontánea, afable o despreocupada?</option>
-                            <option value="2">2. ¿Es usted una persona con gran sentido de humor y aire de superioridad?</option>
-                            <option value="3">3. ¿Acaso usted se considera justo, introspectivo y racional?</option>
-                            <option value="4">4. ¿O más bien se considera independiente, testarudo, autocrítico y de mente abierta?</option>
-                            <option value="5">5. ¿Mejor indíqueme si es tímido y recatado?</option>
-                            <option value="6">6. Aun mejor, ¿Es una persona social, divertido y algo alocado?</option>
-                            <option value="7">7. Ya sé, ¿Usted es muy vital, risueño y tiene un alto sentido de la repsonsabilidad?</option>
-                        </select>
-                </form>
+                <div class="form1">
+                    <form name="Coctelería" action="get" target="_blank" novalidate class="the_form">
+
+                        <div class="part1">
+                            <div class="controles">
+                                <div class="labels">
+                                    <label for="Coctelería">¿Es menor de edad?</label>
+                                </div>
+                                <div class="controles">
+                                    <input name="birthday" id="birthday" type="date">
+                                </div>
+
+                                <div class="labels">
+                                    <label for="Coctelería">¿Dama, Caballero o Demonio?</label>
+                                </div>
+                                <div class="contenido">
+                                    <div class="opciones">
+                                        <input name="genre" id="genre" type="checkbox"> Mujer
+                                    </div>
+                                    <div class="opciones">
+                                        <input name="genre" id="genre" type="checkbox"> Hombre
+                                    </div>
+                                    <div class="opciones">
+                                        <input name="genre" id="genre" type="checkbox"> No importa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="part 2">
+                            <div class="controles">
+                                <div class="labels">
+                                    <label for="Coctelería">Veo que te has ganado un pretendiente, cuentanos más:</label>
+                                </div>
+                                <div class="contenido">
+                                    <input name="ecivil" id="ecivil" type="radio">Estoy disponible
+                                    <input name="ecivil" id="ecivil" type="radio">Solo disponible medio tiempo
+                                    <input name="ecivil" id="ecivil" type="radio">No le cuenten a nadie que estuve aquí
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="controles">
+                            <div class="labels">
+                                <label for="Coctelería">Claro está que nos puede dejar su correo, tiene la palabra del diablo que será netamente para comunicaciones comerciales</label>
+                            </div>
+                            <div class="contenido">
+                                <input type="email" name="email" id="email" placeholder="correoinfernal@mail.com">
+                            </div>
+                        </div>
+
+                        <div class="controles">
+                            <div class="labels">
+                                <label for="Coctelería">Su opinión es muy importante para nosotros, ¿quisiera enseñarle algo nuevo al diablo?</label>
+                            </div>
+                            <div class="contenido">
+                                <textarea name="observaciones" id="observaciones" cols="30" rows="10" placeholder="Información reservada bajo los eternos lamentos de almas en pena."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="controles">
+                            <div class="labels">
+                                <label for="Coctelería">Bueno regresando a la bebida:</label>
+                            </div>
+                            <div class="contenido">
+                                <select name="bebida" id="bebida">
+                                    <option value="0" selected>¿Que personalidad considera usted posee?</option>
+                                    <option value="1">1. ¿Se considera una persona divertida, espontánea, afable o despreocupada?</option>
+                                    <option value="2">2. ¿Es usted una persona con gran sentido de humor y aire de superioridad?</option>
+                                    <option value="3">3. ¿Acaso usted se considera justo, introspectivo y racional?</option>
+                                    <option value="4">4. ¿O más bien se considera independiente, testarudo, autocrítico y de mente abierta?</option>
+                                    <option value="5">5. ¿Mejor indíqueme si es tímido y recatado?</option>
+                                    <option value="6">6. Aun mejor, ¿Es una persona social, divertido y algo alocado?</option>
+                                    <option value="7">7. Ya sé, ¿Usted es muy vital, risueño y tiene un alto sentido de la repsonsabilidad?</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
         </div>
     </div>
 
