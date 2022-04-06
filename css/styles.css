@@ -76,34 +76,30 @@ nav {
     border-radius: 10px;
     display: grid;
     grid-area: section-1;
-    grid-template: 
-    "p1" auto
-    "h2-2" auto
-    "caja1" auto
-    "p2" auto
-    "caja2" auto;
     margin: 1rem;
     padding: 1rem;
 }
 
-.p1 {
-    grid-area: p1;
-}
-
-.h2-2 {
-    grid-area: h2-2;
-}
-
-.caja1 {
-    grid-area: caja1;
-}
-
-.p2 {
-    grid-area: p2;
+.section2{
+    justify-content: center;
+    background-color: rgba(250,250,250,.4);
+    border: 1px solid #444141; 
+    border-radius: 10px;
+    display: grid;
+    grid-area: section-2;
+    grid-template:
+    "caja-2" auto
+    "caja-3" auto;
+    margin: 20px;
+    padding: 1rem;
 }
 
 .caja2 {
-    grid-area: caja2;
+    grid-area: caja-2;
+}
+
+.caja3{
+    grid-area: caja-3;
 }
 
 .caja1 img {
@@ -129,17 +125,6 @@ nav {
 nav a {
     font-weight: bold;
     text-shadow: 1px 1px 1px #999999;;
-}
-
-.section2 {
-    justify-content: center;
-    background-color: rgba(250,250,250,.4);
-    border: 1px solid #444141; 
-    border-radius: 10px;
-    display: grid;
-    margin: 20px;
-    grid-area: section-2;
-    padding: 1rem;
 }
 
 .section2 p {
@@ -236,31 +221,128 @@ footer{
 } 
 
 .redes img {
-    max-width: 150px;
-    width: 80%;
+    min-width: 155px;
 }
 
 /*Diseño de Lux*/
+.lux-body{
+    display: grid;
+    grid-template: 
+    "header1" 250px
+    "navbar1" 50px
+    "section-5" auto
+    "section-6" auto
+    "section-7" auto
+    "section-8" auto
+    "footer1" 250px;
+}
+
+.section5, .section6, .section7, .section8{
+    background-color: rgba(250,250,250,.4);
+    border: 1px solid #444141; 
+    border-radius: 10px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.section5{
+    grid-area: section-5;
+}
+
+.section6{
+    grid-area: section-6;
+}
+
+.section7{
+    grid-area: section-7;
+}
+
+.section8{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: section-8;
+    justify-content: center;
+}
+
+.cocteleria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listas{
+    max-width: 200px;
+    align-self: center;
+}
+
+ol li {
+    padding-bottom: .1rem;
+}
+
 .form {
     align-items: center;
     justify-content: center;
     max-width: 850px;
 }
 
-.parte1 {
-    margin: 1rem;
+.controles{
+    margin: .5rem;
 }
-.contenido input, .contenido textarea, .contenido select {
-    background-position: 0 0;
-    background-size: 1.6rem 1.6rem;
-    background-repeat: no-repeat;
-    max-width: 300px;
+
+.contenido{
+    max-width: 400px;
+    padding: .5rem;
+}
+
+.contenido input, .contenido select{
+    margin: .5rem 0;
     width: 100%;
-    padding-bottom: .1rem;
-    padding-left: 2rem;
 }
 
 /*Diseño de Salida*/
+.salida-body{
+    display: grid;
+    grid-template: 
+    "header1" 250px
+    "navbar1" 50px
+    "section-9" auto
+    "section-10" auto
+    "section-11" auto
+    "footer1" 250px;
+}
+
+.section9, .section10, .section11{
+    background-color: rgba(250,250,250,.4);
+    border: 1px solid #444141; 
+    border-radius: 10px;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.section9{
+    grid-area: section-9;
+}
+
+.section9 h1{
+    color: rgb(192,33,41);
+    font-family: 'Redressed', cursive;
+    font-size: 40px;
+    text-shadow: 1px 2px 1px black;
+}
+
+.section10{
+    grid-area: section-10;
+}
+
+.section11{
+    grid-area: section-11;
+}
+
+.section11 img{
+    max-width: 300px;
+}
+
 .tabla {
     display: grid;
     justify-content: center;
@@ -273,12 +355,15 @@ table {
 table, table th, table td {
     border: 1px solid black;
     border-collapse: collapse;
+    font-size: 12px;
 }
 
 
 /*Resolución de tabletas*/
 @media screen and (min-width: 768px) {
+
     /*Diseño de Home*/
+
     body {
         grid-template-areas: 
             "header1 header1"
@@ -292,16 +377,61 @@ table, table th, table td {
         grid-template-rows: 200px 50px auto auto auto auto;
     }
 
+    .section3{
+        justify-content: center;
+        display: grid;
+    }
+
+    .caja4{
+        max-width: 400px;
+    }
+
+    /*Diseño de Lux*/
+
+    .lux-body{
+        display: grid;
+        grid-template: 
+        "header1 header1" 
+        "navbar1 navbar1" 
+        "section-5 section-5" 
+        "section-6 section-7" 
+        "section-8 section-8"
+        "footer1 footer1";
+        grid-template-columns: auto auto;
+        grid-template-rows: 200px 50px auto auto auto auto;
+    }
+
+    .section6{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cocteleria{
+        text-align: center;
+    }
+
     /*Diseño de Salida*/
-        table {
-            max-width: 600px;
-        }
+
+    table {
+        max-width: 600px;
+    }
+
+    table, table th, table td {
+        font-size: 16px;
+    }
+
+    .section11 img{
+        max-width: 600px;
+    }
 
 }
 
 /*Resolución de medias (equipos de escritorio)*/
 @media screen and (min-width: 1024px) {
+
     /*Diseño de Home*/
+
     body {
         grid-template-areas: 
             "header1 header1 header1"
@@ -314,20 +444,83 @@ table, table th, table td {
         grid-template-rows: 200px 50px auto auto auto auto;
     }
 
+    .caja_pricipal {
+        display: grid;
+        grid-template-areas:
+        "foot1 foot2 foot3"
+    }
+
+    .encabezado{
+        border-radius: 15px;
+        grid-area: foot1;
+        margin-top: 90px;
+        max-height: 100px;
+        padding: 1rem;
+    }
+
+    .caja_perfil{
+        grid-area: foot2;
+    }
+
+    .foto img{
+        max-width: 150px;
+    }
+
+    .redes{
+        grid-area: foot3;
+    }
+
+    /*Diseño de Lux*/
+
+    .lux-body{
+    display: grid;
+    grid-template: 
+    "header1 header1" 
+    "navbar1 navbar1" 
+    "section-5 section-5" 
+    "section-6 section-7" 
+    "section-8 section-8"
+    "footer1 footer1";
+    grid-template-columns: 600px auto;
+    grid-template-rows: 200px 50px auto auto auto auto; 
+    }
+
     /*Diseño de Salida*/
     table {
         max-width: 900px;
+    }
+
+    .section9 h1{
+        font-size: 60px;
+    }
+
+    .section11 img{
+        max-width: 800px;
     }
 }
 
 /*Resolución macro*/
 @media screen and (min-width: 1200px) {
+
     /*Diseño de Home*/
-    body {
-        background-color: gray;
-    }
+
     .container-grid {
         margin: 0 auto;
         max-width: 1024px;
+    }
+
+        /*Diseño de Lux*/
+
+        .lux-body{
+        display: grid;
+        grid-template: 
+        "header1 header1" 
+        "navbar1 navbar1" 
+        "section-5 section-5" 
+        "section-6 section-7" 
+        "section-8 section-8"
+        "footer1 footer1";
+        grid-template-columns: 800px auto;
+        grid-template-rows: 200px 50px auto auto auto auto;
     }
 } 
